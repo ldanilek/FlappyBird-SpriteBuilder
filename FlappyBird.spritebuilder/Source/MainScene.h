@@ -12,5 +12,7 @@
 @interface MainScene : GamePlayScene
 
 -(void) gameOver;
+-(void) addObstacle;
+-(void) showScore;
 
 @end
