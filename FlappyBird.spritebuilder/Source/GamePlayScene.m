@@ -10,6 +10,7 @@
     character = (Character *)[CCBReader load:@"Character"];
     [physicsNode addChild:character];
     [self addObstacle];
+    timeSinceObstacle = 0;
 }
 
 -(void)update:(CCTime)delta
@@ -21,5 +22,9 @@
     [character flap];
 }
 // put new methods here
+
+- (void)showScore {
+    //never called. fucking setup
+}
 
 @end
